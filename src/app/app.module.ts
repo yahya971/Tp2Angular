@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { MiniWordComponent } from './mini-word/mini-word.component';
+import { FormsModule } from '@angular/forms';
+import { FontSizePipe } from './font-size.pipe';
+import { ArcEnCielDirective } from './arc-en-ciel.directive';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MiniWordComponent,
+    FontSizePipe,
+    ArcEnCielDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

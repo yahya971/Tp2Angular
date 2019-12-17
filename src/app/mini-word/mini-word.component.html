@@ -1,0 +1,3 @@
+<input type="text" class="form-control" [(ngModel)]="myBackgroundColor" >
+<input type="number" class="form-control" [(ngModel)]="myFontSize">
+<p [ngStyle]="{'font-size': myFontSize|fontSize,'background-color':myBackgroundColor}" >This is the paragraphe for exercice 1</p>
